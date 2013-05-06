@@ -3,8 +3,10 @@
   "repo": "component/selection-rect",
   "description": "Selection rect for DOM based element selection",
   "version": "0.0.1",
-  "keywords": [],
-  "dependencies": {},
+  "keywords": ["select", "rectangle", "selectable"],
+  "dependencies": {
+    "component/rect": "0.0.1"
+  },
   "development": {},
   "license": "MIT",
   "main": "index.js",
