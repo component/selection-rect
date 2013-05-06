@@ -9,7 +9,7 @@
 
 ## API
 
-   
+  The same as [Rect](https://github.com/component/rect).
 
 ## License
 
