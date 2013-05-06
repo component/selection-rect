@@ -6,6 +6,7 @@
   "keywords": ["select", "rectangle", "selectable"],
   "dependencies": {
     "component/rect": "0.0.1",
+    "component/css": "*",
     "component/inherit": "*"
   },
   "development": {},
