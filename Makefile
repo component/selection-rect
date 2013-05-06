@@ -1,5 +1,5 @@
 
-build: components index.js selection-rect.css template.js
+build: components index.js selection-rect.css
 	@component build --dev
 
 template.js: template.html
@@ -9,6 +9,6 @@ components: component.json
 	@component install --dev
 
 clean:
-	rm -fr build components template.js
+	rm -fr build components
 
 .PHONY: clean
