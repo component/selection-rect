@@ -5,14 +5,14 @@
   "version": "0.0.1",
   "keywords": ["select", "rectangle", "selectable"],
   "dependencies": {
-    "component/rect": "0.0.1"
+    "component/rect": "0.0.1",
+    "component/inherit": "*"
   },
   "development": {},
   "license": "MIT",
   "main": "index.js",
   "scripts": [
-    "index.js",
-    "template.js"
+    "index.js"
   ],
   "styles": [
     "selection-rect.css"
