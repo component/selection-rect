@@ -2,7 +2,7 @@
   "name": "selection-rect",
   "repo": "component/selection-rect",
   "description": "Selection rect for DOM based element selection",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "keywords": ["select", "rectangle", "selectable"],
   "dependencies": {
     "component/rect": "0.0.1",
