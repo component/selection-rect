@@ -1,6 +1,6 @@
 
 .selection-rect {
-  position: fixed;
+  position: absolute;
   border: 1px dotted #ddd;
   background: rgba(0, 0, 0, 0.02);
 }
