@@ -58,9 +58,11 @@ Selection.prototype.size = function(w, h){
  * To proxy.
  */
 
-Selection.prototype.to = function(w, h){
+Selection.prototype.to = function(x, y){
   Rect.prototype.to.apply(this, arguments);
   css(this.el, {
+    left: this.x,
+    top: this.y,
     width: this.w,
     height: this.h
   });
