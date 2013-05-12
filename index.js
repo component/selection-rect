@@ -17,7 +17,7 @@ module.exports = Selection;
  * Initialize a Selection rect.
  */
 
-function Selection(x, y, w, h) {
+function Selection(top, left, width, height) {
   this.el = document.createElement('div');
   this.el.className = 'selection-rect';
   Rect.apply(this, arguments);
@@ -33,11 +33,11 @@ inherit(Selection, Rect);
  * Move proxy.
  */
 
-Selection.prototype.moveTo = function(x, y){
+Selection.prototype.moveTo = function(left, top){
   Rect.prototype.moveTo.apply(this, arguments);
   css(this.el, {
-    top: y,
-    left: x
+    top: top,
+    left: left
   });
 };
 
@@ -46,11 +46,11 @@ Selection.prototype.moveTo = function(x, y){
  */
 
 
-Selection.prototype.size = function(w, h){
+Selection.prototype.size = function(width, height){
   Rect.prototype.size.apply(this, arguments);
   css(this.el, {
-    width: this.w,
-    height: this.h
+    width: this.width,
+    height: this.height
   });
 };
 
@@ -58,12 +58,12 @@ Selection.prototype.size = function(w, h){
  * To proxy.
  */
 
-Selection.prototype.to = function(x, y){
+Selection.prototype.to = function(right, bottom){
   Rect.prototype.to.apply(this, arguments);
   css(this.el, {
-    left: this.x,
-    top: this.y,
-    width: this.w,
-    height: this.h
+    left: this.left,
+    top: this.top,
+    width: this.width,
+    height: this.height
   });
 };
