@@ -36,8 +36,8 @@ inherit(Selection, Rect);
 Selection.prototype.moveTo = function(left, top){
   Rect.prototype.moveTo.apply(this, arguments);
   css(this.el, {
-    top: top,
-    left: left
+    bottom: top,
+    right: left
   });
 };
 
@@ -58,7 +58,7 @@ Selection.prototype.size = function(width, height){
  * To proxy.
  */
 
-Selection.prototype.to = function(left, top){
+Selection.prototype.to = function(right, bottom){
   Rect.prototype.to.apply(this, arguments);
   css(this.el, {
     left: this.left,
