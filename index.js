@@ -36,8 +36,8 @@ inherit(Selection, Rect);
 Selection.prototype.moveTo = function(left, top){
   Rect.prototype.moveTo.apply(this, arguments);
   css(this.el, {
-    bottom: top,
-    right: left
+    top: top,
+    left: left
   });
 };
 
